@@ -118,6 +118,11 @@ subl test-example/test.js
 
 in the directory of the tests: $mocha test
 
+you can use the core modue assert or chai that is a subset of that library
+var assert = require('assert')
+var assert = require('chai').assert;
+http://chaijs.com/api/assert/
+
 
 
 
