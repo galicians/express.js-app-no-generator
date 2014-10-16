@@ -65,16 +65,30 @@ typical structure:
 The order here is important becuase requests travel from top to bottom in the chain of middleware
 
 
-one of the ways to configure Express.js settings is to use app.set() with the name of the setting and the value
+3.one of the ways to configure Express.js settings is to use app.set() with the name of the setting and the value
 
 
 
+4.middleware is the backbone of express, comes in 2 flavours:
+external modules as bodyParse.json from connect/express -- > app.use(bodyParser.json())
+defined in the app or its modules such as app.use(function(req, res, next) {...});
 
+middleware is nothing more than a function with three parameters: request, response, and next.
 
+5.routes are processed in the order they are defined:
 
+the way routes are defined in express.js is with helpers app.verb(url,fn1,fn2) where fnjs are request handlers, uverb balues are all, get, post, put, del
+delete
 
+single route catches requests of all methods on all URLs
+app.all('*', function(req, res) {
+	
+})
 
+res.render(viewName, data, callback(error, html)) -- > express 
 
+6. instructions to start the server
+http.createServer(app).listen(app.get('port') function() {})
 
 
 
