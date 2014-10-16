@@ -90,6 +90,51 @@ res.render(viewName, data, callback(error, html)) -- > express
 6. instructions to start the server
 http.createServer(app).listen(app.get('port') function() {})
 
+####################TDD and BDD for Node.js
+
+standalone services and REST API should be tested with TDD
+
+rich user interface(UI)/ user experience(UX) can be tested with headless browsers as PhantomJS
+
+npm install -g mocha --> mocha -V
+
+hooks: suites
+before, beforeEach, after(), afterEach()
+
+all hooks and tests support asynchronous 
+
+describe.skip it.skip() exclusivity describe.only
+
+besides the BDD interfaces describe, it, before Mocha, supports traditional TDD interfaces
+
+suite --> describe
+test --> it
+setup --> before
+teardown --> after
+suiteSetup --> beforeEach
+suiteTeardown --> afterEach
+
+subl test-example/test.js
+
+in the directory of the tests: $mocha test
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

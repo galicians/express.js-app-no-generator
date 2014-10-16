@@ -12,7 +12,7 @@ app.set('view engine', 'jade')
 
 app.all('*', function(req, res) {
 	res.render(
-		'index', {msg: 'Welcome to Pablo s Node.js app'}
+		'index', {msg: "Welcome to Pablo's Node.js app"}
 		);
 });
 
