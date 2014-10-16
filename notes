@@ -1,0 +1,84 @@
+node pending to read: https://github.com/maxogden/art-of-node
+pending exercises: http://nodeschool.io/
+
+javascript:
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
+
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Introduction_to_Object-Oriented_JavaScript
+
+The acronym CRUD refers to all of the major functions that are implemented in relational database applications. Each letter in the acronym can map to a standard SQL statement, HTTP method or DDS operation:
+Operation			SQL		HTTP	DDS
+Create				INSERT	PUT / POST	write
+Read (Retrieve)		SELECT	GET	read / take
+Update (Modify)		UPDATE	PUT / PATCH	write
+Delete (Destroy)	DELETE	DELETE	dispose
+
+
+- Submit data via traditional forms with full page refresh
+- Submit data via REST API(AJAX HTTP requests) without page refresh
+	-backbone.js, angular, ember
+
+Under the hood, all front end frameworks use jQuery's ajax() method, so we will be using REST API end points via jQuery ajax() method 
+
+########## Main folders in express.js
+
+node_modules: dependencies, express.js and connect libraries
+views: jade files
+routes: Node.js modules that contain request handlers
+db: seed data and scripts from mongo
+public: html, css, javascript
+
+├── db
+├── public
+│   ├── css
+│   ├── img
+│   └── js
+├── routes
+└── views
+    └── includes
+
+    After this we will add the project metadata with NPM
+
+    NPM is a registry and a dependency managment tool
+
+################### package.json ##################
+    npm init vs type or copy the file and npm install
+
+    npm install express --save
+
+    Advise to deal with dependencies, commit your node_modules folter along with the code to a git repository
+    and use that instead of fetching modules according to packaje.json each time on deployment.
+
+################# app.js #######################
+
+main file
+typical structure:
+
+1. require dependencies
+2. configure settings
+3. connect to database(optional)
+4. define middleware
+5.define routes
+6.start the server
+7.start workes with clusters(optional)
+
+The order here is important becuase requests travel from top to bottom in the chain of middleware
+
+
+one of the ways to configure Express.js settings is to use app.set() with the name of the setting and the value
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
