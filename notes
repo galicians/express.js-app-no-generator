@@ -140,18 +140,52 @@ makefile:
 http://www.cprogramming.com/tutorial/makefiles.html
 
 make tests
+#########################JADE#################################
+JADE is compatible with Express.js out of the box, so you only need to 
+app.set('view.')
+
+template engine is a library or framework that uses ome rules/languages to interpret data and render views.
+In the case of web apps, views are HTML pages(or parts of them), but they can be JSON or XML files.
+templates can be compiled into HMTL either server-side(traditional) or client-side(REST API)
+
+JADE uses whitespace and indentation as part of its language
+
+syntax: http://jade-lang.com/demo/
+friendly: http://naltatis.github.io/jade-syntax-docs/
+
+Any text at the beginning of a line is interpreted as an HTML
+Data that are passed to the Jade template are called locals. to output the value of a variable use =
+h1= title
+p= body
+Attributes are added by putting them into parentheses right after the tag name.
+name =value format
+
+difference between JADE and HANDLEBARS, jade allows all javascript
+
+interpolation is achieved via #{name}. the interpolation is processed at template compilation; therefore don't use it in executable javascript
+
+include ./includes/header
+includes/partials are handled at compilation(not at runtime)
+
+jade template --> command line
+
+#####################HANDLEBARS##########################Í
+developers cant write a lot of javascript inside the templates.
+
+devs can install handlebars via npm with npm install handlebars or npm install handlebars --save assuming thers either node_modules or package.json in the current working directory
+
+$node handlebars-example.js
+################NODE & TEMPLATES ################
+
+jade by default ==> app.set('view engine', 'jade')
 
 
 
-
-
-
-
-
-
-
-
-
+ board.each_with_index do |cell, index|
+	index % 10 == 0 ? color.rotate! : color
+	chess.push(cell + color[0])
+	color.rotate!
+  end
 
 
 
