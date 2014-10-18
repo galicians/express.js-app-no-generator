@@ -1,6 +1,8 @@
 node pending to read: https://github.com/maxogden/art-of-node
 pending exercises: http://nodeschool.io/
 
+practical node: https://github.com/azat-co/practicalnode/tree/master/ch3/blog-express
+
 javascript:
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/A_re-introduction_to_JavaScript
 
@@ -124,13 +126,20 @@ var assert = require('chai').assert;
 http://chaijs.com/api/assert/
 
 
+superagent is a library to streamline the making of HTTP requests
+
+in mocha before the test we create a server, that we shutdown once the tests are finished
 
 
+killall node
 
+heroku and node:
+https://devcenter.heroku.com/articles/getting-started-with-nodejs-o
 
+makefile: 
+http://www.cprogramming.com/tutorial/makefiles.html
 
-
-
+make tests
 
 
 
